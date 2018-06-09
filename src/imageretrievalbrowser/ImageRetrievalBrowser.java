@@ -21,7 +21,7 @@ public class ImageRetrievalBrowser {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) { 
+    public static void mains(String[] args) { 
         //--------------1. Images DB preparation
         //read data dari folder
         ArrayList<File> listFiles = new ArrayList<>(); //siapkan tempat untuk tampung semua file

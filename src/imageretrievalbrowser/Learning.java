@@ -21,7 +21,7 @@ public class Learning {
 	 * @param file
 	 * @return
 	 */
-         public static void main(String[] args) {
+         public static void mains(String[] args) {
             String path = "E:\\Users\\Nadian\\Documents\\NetBeansProjects\\ImageRetrievalBrowser\\src\\drawable\\1469986689_vector_66_08.png";
             File input = new File(path);
             

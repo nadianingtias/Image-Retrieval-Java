@@ -440,18 +440,16 @@ public class BrowserImage extends javax.swing.JFrame {
         //---------------------4. tentukan K
         double[] dynamicDist = (distances);
         int k = 6;
-//        Arrays.sort(dynamicDist);
-        int[][] pairJarakIndex = new int[distances.length][2];
+        
+        int[][] pairJarakIndex = new int[distances.length][2]; //preparing arrays of pair jarak and index of image
         for(int i=0 ; i<distances.length;i++){
             pairJarakIndex[i][0] = (int)dynamicDist[i];  //jarak
             pairJarakIndex[i][1] = i; //index of image
         }
+        //ascending
         Arrays.sort(pairJarakIndex, (a, b) -> Double.compare(a[0], b[0]));
         for(int i=0;i<distances.length;i++){
-//            for(int j=0;j<2;j++){
-                System.out.print("sorted? "+pairJarakIndex[i][0]+" "+pairJarakIndex[i][1]);
-//            }
-            System.out.println("");
+                System.out.println("sorted? "+pairJarakIndex[i][0]+" "+pairJarakIndex[i][1]);
         }
         
         //---------------------5. do Sorting
